@@ -2,9 +2,9 @@ from deportista import Deportista
 from persona import Persona
 class Futbolista(Persona, Deportista):
     listaFutbolistas = []
-    def __init__(self, nombre, edad, altura, sexo, añosPracticando, golesMarcados, tarjetasRojas, piernaHabil):
+    def __init__(self, nombre, edad, altura, sexo, anosPracticando, golesMarcados, tarjetasRojas, piernaHabil):
         super().__init__(nombre, edad, altura, sexo)
-        Deportista.__init__(añosPracticando, "Futbol")
+        Deportista.__init__(self, anosPracticando)
         self._golesMarcados = golesMarcados
         self._tarjetasRojas = tarjetasRojas
         self._piernaHabil = piernaHabil
